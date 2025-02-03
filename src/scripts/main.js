@@ -13,7 +13,9 @@ population.forEach((item) => {
   total += Number(item.textContent.split(',').join(''));
 });
 
-average = Math.floor(total / count).toLocaleString('en-US');
+average = Math.floor(total / count);
+
+average = average.toLocaleString('en-US');
 total = total.toLocaleString('en-US');
 
 totalNode.textContent = `${total}`;
